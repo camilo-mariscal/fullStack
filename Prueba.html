@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---html es un lenguaje de maquetado o para estructurar de hiper texto --> 
+    <!---dentro del head es para el navegador son ajustes--> 
+    <meta charset="UTF-8">    
+    <title>Mi primera pagona web</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+<!---link vincula el html con css--> 
+    <style>
+            h1 {
+                color: blue;
+                 background: black;
+               }
+
+    </style>
+    <!--otra forma de incluir css pero no ves la usada por que se tiene que cargar en cada HTML-->
+</head>
+<body>
+    <!---dentro del body va la info de la pagina--->
+    <!---h1,h2,h3... son gerarquitas swe los encabezados--->
+    <!--pongo la etiqueda y despues preciono el tabulador para que me aparezca lo que quiero -->
+    <h1>Mi primer encabesado</h1> 
+    <p id="parrafo1">Lorem ipsum dolor sit amet consectetur, <strong>sadipisicing</strong>  elit. Natus <em>reprehenderit</em>  ab perspiciatis voluptate eum ea explicabo accusantium, ullam unde culpa ut, mollitia, aperiam quisquam asperiores hic saepe aliquid consequatur? Laboriosam.</p>
+     <!---strong para darle fuerza a la palabra y se ponen en negrita--->
+      <!---em lo pone en italy y para otra cosa mas--->
+    <h2 style="color: aqua; background-color:  red;">Mi segundo encabesado</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem voluptatum, fugit laborum veritatis architecto sequi sapiente possimus culpa porro enim, quo aspernatur odio qui! Ad hic nihil iusto ab.</p>
+      <!---style es css in-line no se usa solo en casos particulares y justificados --->
+     <h1 class="clasifico">Otro encabezado</h1>
+     <p class="clasifico">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem voluptatum, fugit laborum</p>
+     
+      <img src="../13912435_766177883521905_8581015359776292154_n.jpg" alt="imagen" width="200px" >
+    <img src="img\electronica.jpg" alt="Foto"  width="700px">  <!---elemento de linea "alt" es un atrivuto que aparece cuando no se carga la imagen se muestra lo que estar entre comillas--->
+    </br>  <!---br salto de linea  se usa en casos especiales por que no se puede manejar desde css--->
+    <a target="_blank" href="http://www.google.com">Google</a> <!---el atributo target depende de lo que le ponga me va a habriuna nueva pestaña o se carga en la misma  --->
+    <p>
+         <a target="_blank" href="http://www.google.com">Google</a> 
+          <!---al hacerlo asi aparte de ser un link lo toma como si fuera un parrafo
+            y toma forma de bloque horizontal--->
+    </p>
+    <!---elementos de bloque se colocan uno abajo de otro, ocupan todo el espesor y hay otros elementos de linea 
+        que se ponen uno al lado de otro como las etiquetas "a" --->
+
+         <!---listas ordenadas <ol></ol> --->
+
+         <!---listas desordenadas 
+            <ul>
+              <li></li>
+         </ul> --->
+
+         <ol>
+             <li>Futbol</li>
+             <li>Voley</li>
+             <li>Basquet</li>
+         </ol>
+
+         <ul>
+             <li>Aplicada</li>
+             <li>Medidas</li>
+             <li>Comunicaciones</li>
+         </ul>
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/ksaaMt8Lo6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Tu navegador no soporta iframe</iframe>
+
+           <!---iframe me permite colocar contenido propio o de terceros tales como videos u formas de pago   --->
+
+           <table>
+
+            <tr>
+                <th>tatle 1</th>
+                <th>tatle 2</th>
+                <th>tatle 3</th>
+            </tr>
+
+            <tr>
+              <td>Celda 1</td>
+              <td>Celda 2</td>
+              <td>Celda 3</td>
+            </tr>
+          
+            <tr>
+              <td>Celda 4</td>
+              <td>Celda 5</td>   
+              <td>Celda 6</td>
+            </tr>
+          
+          </table>
+
+          <!---table para hacer tablas "th" para los titulos de las columnas y "td" lo que va en las columnas "tr" la primera fila de las columnas --->
+
+           <form>
+                  <label for="nom">Nombre:</label> <br>
+                  <input type="text" id="nom" name="fname"><br>
+                  <!---type existen distintos tipos de type--->
+           <!---form es para formularios
+            label, input es para poner los datos en el formulario --->
+             <label for="comet">Tu respuesta</label><br>
+            <textarea name="messenge" id="comet" cols="30" rows="10"></textarea><br>
+             <!---textarea es para generar un cuadro para hacer comentarios  --->
+            <input type="submit">
+            <!---type submit mandar al servidor todo lo que tiene el form --->
+            <input type="reset">
+          </form>
+  </body>
+
+</html>

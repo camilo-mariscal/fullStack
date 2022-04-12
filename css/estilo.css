@@ -1,0 +1,20 @@
+
+/*selector por etiqueta*/
+p {
+    color: blue;
+    ;
+   }
+/*esta es la forma correcta de hacer css*/
+/*selector por ID*/
+#parrafo1
+{
+    color: green;
+    ;
+   }
+
+   /*selector por clase pueso seleccionar las cosas que quiero que tengan las  mismas cosa con la class en el html*/
+   .clasifico
+   {
+    color: orange;
+    ;
+   }
